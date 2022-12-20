@@ -6,7 +6,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(180, 44, 44, 0.764),rgba(180, 44, 44, 0.764)),url(background.jfif);
+    background-image: linear-gradient(rgba(180, 44, 44, 0.764),rgba(180, 44, 44, 0.764)),url(th.jfif);
     background-size: cover;
     background-position: center;
 }
