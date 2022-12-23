@@ -7,8 +7,13 @@
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(180, 44, 44, 0.764),rgba(180, 44, 44, 0.764)),url(th.jfif);
-    background-size: cover;
+    background-size:cover;
     background-position: center;
+}
+.banner img{
+    width: 10%;
+    margin: 20PX;
+    margin-left: 20px;
 }
 .navbar{
     width: 100%;
@@ -18,9 +23,10 @@
     display: flex;
     justify-content: space-between;
 }
+
 .logo{
-    width: 10%;
-    margin: 30px;
+    width: 1px;
+    margin: 5px;
     cursor:pointer;
 }
 .navbar ul li{
