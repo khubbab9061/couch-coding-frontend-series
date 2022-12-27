@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 40px;
+    width: 1300px;
+    text-align: center;
+    padding-left: 100px;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    background-color: blueviolet;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.752),rgba(128, 128, 128, 0.604),rgba(0, 0, 0, 0.752));
+}
+
+nav img{
+    padding: 20px;
+    width: 100px;
+    padding-left: 40px;
+}
+
+nav h1{
+    font-size: 30px;
+    padding-top: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul a{
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    padding-top: 45px;
+    padding-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul li{
+    list-style: none;
+    padding-left: 20px;
+}
+
+/* --------------------------------------------------------------------- */
+
+#first.vision{
+    justify-content: center;
+}
+
+header .first{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: lightcoral;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.752),rgba(128, 128, 128, 0.604),rgba(0, 0, 0, 0.752));
+}
+
+.vision{
+    padding-left: 50px;
+}
+
+.vision h1{
+    font-size: 100px;
+}
+
+.vision p{
+    font-size: 20px;
+    text-align: center;
+}
+
+figure img{
+    width: 500px;
+    padding-right: 20px;
+
+    transition: all 300ms;
+    animation: float 400ms infinite alternate;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+header .second{
+    display: flex;
+    padding-top: 40px;
+    background-color: aqua;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.752),rgba(128, 128, 128, 0.604),rgba(0, 0, 0, 0.752));
+}
+
+.second figure{
+    padding-bottom: 30px;
+    padding-left: 50px;
+
+    transition: all 300ms;
+    animation: float 400ms infinite alternate;
+}
+
+.providing h1{
+    font-size: 80px;
+}
+
+.providing p{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 20px;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+#forming{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: lightgreen;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.752),rgba(128, 128, 128, 0.604),rgba(0, 0, 0, 0.752)); 
+}
+
+#forming h1{
+    font-size: 60px;
+}
+
+#forming form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form span{
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+form input{
+    padding: 5px;
+}
+
+form button{
+    margin-top: 15px;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    100%
+    {
+        transform: translateY(10px);
+    }
+}
