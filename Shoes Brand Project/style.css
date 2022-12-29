@@ -91,17 +91,35 @@ nav ul li a{
 /* -----------------------------------------------HOME new----------------------------------------------- */
 
 #home{
-    display: flex;
+    display: block;
     justify-content: space-around;
-    align-items: center;
     padding: 30px 30px 30px 30px;
     background-image: linear-gradient(to top right,rgba(0, 0, 0, 0.685),rgba(255, 255, 255, 0.316)),url(./background.jpeg);
     background-size: cover;
     border: 2px solid white;
 }
 
+#home .hom{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+
+.all{
+    display: flex;
+    align-items: center;
+}
+
+.vis--mis{
+    display: block;
+    align-items: center;
+}
+
 .vis--mis h1{
     font-size: 70px;
+    color: black;
 }
 
 .vis--mis p{
@@ -160,10 +178,7 @@ nav ul li a{
 }
 
 .fig--p ul{
-    
-    /* width: 900px; */
     text-align: justify;
-    /* height: 215px; */
     background-color: rgba(0, 0, 0, 0.555);
     color: white;
     margin: 45px 45px 45px 45px;
