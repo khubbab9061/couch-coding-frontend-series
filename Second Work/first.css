@@ -1,13 +1,10 @@
 *{
-    /* text-align: center; */
     margin: 0;
     padding: 0;
 }
 
 .banner{
-    /* background-image: linear-gradient(url(backgroung.jfif)); */
-    /* width:70%; */
-    height: 100vh;
+
     background-size:cover;
     background-image: linear-gradient(rgba(76, 12, 12, 0.334),rgba(180, 44, 44, 0.764)),url(backgroung.jfif);
     background-position:center;
@@ -24,9 +21,53 @@
     
 }
 
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 20px;
+    padding: 5px 25px 5px 25px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.316);
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover{
+    color: red;
+}
+
+.navbar ul li:hover{
+    background-color: rgb(0, 0, 0);
+    border: 1px outset red;
+}
+
 .content{
-    padding: 180px;
-    text-align: center;
+    padding: 120px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.right img{
+    width: 300px;
+    padding: 20px;
+    /* border: 2px solid white; */
+    outline: 2px solid black;
+
+}
+
+.left button{
+    display: block;
 }
 
 .content h3{
@@ -44,7 +85,7 @@
 
 .content button{
     margin: 15px;
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.462);
     width: 200px;
     height: 40px;    
     border-radius: 20px;
@@ -52,13 +93,14 @@
     border-width: 2;
 }
 .content button a{
+    text-decoration: none;
     color:rgb(225, 36, 36);
     font-weight: bold;
 }
 
 .content button:hover{
     background-color: black;
-    border: none;
+    color: black;
 }
 
 /* .span{

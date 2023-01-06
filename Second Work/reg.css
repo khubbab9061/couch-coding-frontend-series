@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: 520px;
+    padding: 100px;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.288),rgba(0, 0, 0, 0.299));
+    border: 2px solid black;
+}
+
+main h1{
+    font-size: 70px;
+    padding: 60px 0 60px 0;
+}
+
+main button{
+    margin: 15px;
+    background-color:black;
+    width: 200px;
+    height: 40px;    
+    border-radius: 20px;
+    border-color:rgb(225, 36, 36);
+    border-width: 2;
+}
+
+main button:hover{
+    background-color: transparent;
+}
+
+button a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
