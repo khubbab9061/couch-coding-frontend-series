@@ -148,6 +148,7 @@ header{
     /* border: 1px outset orange; */
     box-shadow:  inset 0px 0px 20px black;
     background-color: gray;
+    padding: 20px;
 }
 
 .block--two img{
