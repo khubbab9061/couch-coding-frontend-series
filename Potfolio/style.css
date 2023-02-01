@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#first-section{
+    background-color: burlywood;
+    height: 100vh;
+}
+
+nav{
+    background-color:rgb(41,32,23);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+    color: burlywood;
+}
+
+nav h1{
+    font-size: 50px;
+}
+
+nav ul{
+    display: flex;
+}
+
+.wood{
+    color: rgba(165, 42, 42, 0.696);
+}
+
+nav ul li{
+    padding-left: 50px;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: burlywood;
+    font-weight: bold;
+}
+
+.first-head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 130px;
+}
+
+.left h1{
+    font-size: 70px;
+    cursor: default;
+    padding-bottom: 20px;
+}
+
+.left h3{
+    padding-left: 85px;
+    font-size: 40px;
+    cursor: default;
+}
+
+.left button{
+    padding: 10px 20px 10px 20px;
+    margin-left: 85px;
+    background-color: black;
+    color: burlywood;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.right img{
+    margin-right: 100px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 20px;
+}
+
+/* -------------------------------------------------<Why Me>-------------------------------------------------------- */
+
+#second-head{
+    height: 65vh;
+    background-color: rgb(221, 164, 90);
+}
+
+.why-me h1{
+    display: block;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    font-size: 70px;
+}
+
+.why-me-content{
+    display: flex;
+    justify-content:space-around;
+    padding: 0 200px 0 200px;
+}
+
+.why-me-left{
+    display: grid;
+    text-align: center;
+}
+
+.why-me-left i{
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 60px;
+}
+
+.why-me-center h3{
+    padding: 15px 0 30px 0;
+}
+
+.why-me-right{
+    font-size: 25px;
+}
+
+.why-me-right li{
+    padding: 20px 0 30px 0;
+    list-style: none;
+    padding-left: 40px;
+}
+
+.bold{
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 30px;
+}
