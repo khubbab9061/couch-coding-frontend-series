@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#first-section{
+#first-section {
     background-color: burlywood;
     height: 100vh;
 }
 
-nav{
-    background-color:rgb(41,32,23);
+nav {
+    background-color: rgb(41, 32, 23);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,90 +18,140 @@ nav{
     color: burlywood;
 }
 
-nav h1{
+nav h1 {
     font-size: 50px;
 }
 
-nav ul{
+nav ul {
     display: flex;
 }
 
-.wood{
+.wood {
     color: rgba(165, 42, 42, 0.696);
 }
 
-nav ul li{
-    padding-left: 50px;
+nav ul li {
+    margin-left: 50px;
     list-style: none;
 }
 
-nav a{
+nav ul li:hover{
+    animation: bar 10s alternate;
+}
+
+@keyframes bar{
+    0%{
+        background: brown;
+        content: '';
+        /* padding-left: -10px; */
+    }
+    100%{
+        background: whitesmoke;
+        content: '';
+        padding-left: 10px;
+    }
+}
+
+nav a {
     text-decoration: none;
     color: burlywood;
     font-weight: bold;
 }
 
-.first-head{
+.first-head {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 130px;
+    padding-top: 110px;
 }
 
-.left h1{
+.left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left .large{
+    font-size: 170px;
+    font-weight: bold;
+    /* padding-bottom: 200px; */
+}
+
+.left .h-m{
+margin-top: -45px;
+margin-right: 10px;
+}
+
+.left-b h1 {
     font-size: 70px;
     cursor: default;
     padding-bottom: 20px;
 }
 
-.left h3{
-    padding-left: 85px;
-    font-size: 40px;
+.left-b h3 {
+    
+    font-size: 30px;
     cursor: default;
 }
 
-.left button{
+.left-b button {
     padding: 10px 20px 10px 20px;
     margin-left: 85px;
     background-color: black;
     color: burlywood;
     border-radius: 10px;
+    border: none;
     cursor: pointer;
 }
 
-.right img{
+.left-b button:hover{
+    background-color: rgba(165, 42, 42, 0.696);
+    border: none;
+}
+
+.right img {
     margin-right: 100px;
-    width: 250px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 8px 8px 20px;
+    animation: slide 1s alternate;
 }
+
+@keyframes slide{
+    0%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
 
 /* -------------------------------------------------<Why Me>-------------------------------------------------------- */
 
-#second-head{
+#second-head {
     height: 65vh;
     background-color: rgb(221, 164, 90);
 }
 
-.why-me h1{
+.why-me h1 {
     display: block;
     text-align: center;
     padding: 30px 0 30px 0;
     font-size: 70px;
 }
 
-.why-me-content{
+.why-me-content {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     padding: 0 200px 0 200px;
 }
 
-.why-me-left{
+.why-me-left {
     display: grid;
     text-align: center;
 }
 
-.why-me-left i{
+.why-me-left i {
     padding: 10px;
     font-size: 30px;
     margin-bottom: 20px;
@@ -109,21 +159,21 @@ nav a{
     border-radius: 60px;
 }
 
-.why-me-center h3{
+.why-me-center h3 {
     padding: 15px 0 30px 0;
 }
 
-.why-me-right{
+.why-me-right {
     font-size: 25px;
 }
 
-.why-me-right li{
+.why-me-right li {
     padding: 20px 0 30px 0;
     list-style: none;
     padding-left: 40px;
 }
 
-.bold{
+.bold {
     font-weight: bolder;
     text-decoration: underline;
     font-size: 30px;
@@ -131,27 +181,31 @@ nav a{
 
 /* ------------------------------------------------<My Skills>------------------------------------------------------- */
 
-#third-head{
+#third-head {
     height: 75vh;
     background-color: burlywood;
 }
 
-.skill{
+#third-head button{
+    cursor: pointer;
+}
+
+.skill {
     display: block;
     text-align: center;
 }
 
-.skill h1{
+.skill h1 {
     font-size: 70px;
-    padding: 30px 0 30px 0;
+    padding: 20px 0 30px 0;
 }
 
-.skill-content{
+.skill-content {
     display: flex;
     justify-content: space-around;
 }
 
-.skill-content i{
+.skill-content i {
     font-size: 100px;
     padding: 30px;
     border: 8px solid black;
@@ -159,66 +213,76 @@ nav a{
     margin-bottom: 20px;
 }
 
-.skill-content h2{
+.skill-content h2 {
     font-weight: bolder;
     padding-bottom: 10px;
 }
 
-.skill-content p{
+.skill-content p {
     padding-bottom: 20px;
 }
 
-.skill-content button{
+.skill-content button {
     padding: 5px 50px 5px 50px;
     font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 10px;
     border: none;
 }
 
-.skill-content-one{
+.skill-content button:hover{
+    background-color: rgba(165, 42, 42, 0.696);
+}
+
+.skill-content-one {
     box-shadow: inset 0px 0px 10px black;
     padding: 20px;
 }
 
 
-.skill-content-two{
+.skill-content-two {
     box-shadow: inset 0px 0px 10px black;
     padding: 20px;
 }
 
 
-.skill-content-three{
+.skill-content-three {
     box-shadow: inset 0px 0px 10px black;
     padding: 20px;
 }
 
 /* -------------------------------------------------------<Footer>---------------------------------------------- */
 
-footer{
-    height: 30vh;
+footer {
+
+    height: 25vh;
     background-color: rgb(221, 164, 90);
 }
 
-.contact-me{
+.contact-me {
     display: block;
     text-align: center;
 }
 
-.contact-me h1{
+.contact-me h1 {
     font-size: 60px;
     padding: 30px 0 20px 0;
 }
 
-.footer-icon a{
+.footer-icon{
+    display: flex;
+    justify-content: center ;
+}
+
+.footer-icon a {
     color: black;
 }
 
-.footer-icon i:hover{
-    font-size: 45px;
+.footer-icon i:hover {
+    color:brown;
 }
 
-.footer-icon i{
+.footer-icon i {
     font-size: 40px;
-    padding: 5px 30px 5px 30px;
+    padding: 0px 30px 0px 30px;
 }
