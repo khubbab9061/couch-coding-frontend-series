@@ -128,3 +128,97 @@ nav a{
     text-decoration: underline;
     font-size: 30px;
 }
+
+/* ------------------------------------------------<My Skills>------------------------------------------------------- */
+
+#third-head{
+    height: 75vh;
+    background-color: burlywood;
+}
+
+.skill{
+    display: block;
+    text-align: center;
+}
+
+.skill h1{
+    font-size: 70px;
+    padding: 30px 0 30px 0;
+}
+
+.skill-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-content i{
+    font-size: 100px;
+    padding: 30px;
+    border: 8px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.skill-content h2{
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.skill-content p{
+    padding-bottom: 20px;
+}
+
+.skill-content button{
+    padding: 5px 50px 5px 50px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    border: none;
+}
+
+.skill-content-one{
+    box-shadow: inset 0px 0px 10px black;
+    padding: 20px;
+}
+
+
+.skill-content-two{
+    box-shadow: inset 0px 0px 10px black;
+    padding: 20px;
+}
+
+
+.skill-content-three{
+    box-shadow: inset 0px 0px 10px black;
+    padding: 20px;
+}
+
+/* -------------------------------------------------------<Footer>---------------------------------------------- */
+
+footer{
+    height: 30vh;
+    background-color: rgb(221, 164, 90);
+}
+
+.contact-me{
+    display: block;
+    text-align: center;
+}
+
+.contact-me h1{
+    font-size: 60px;
+    padding: 30px 0 20px 0;
+}
+
+.footer-icon a{
+    color: black;
+}
+
+.footer-icon i:hover{
+    font-size: 45px;
+}
+
+.footer-icon i{
+    font-size: 40px;
+    padding: 5px 30px 5px 30px;
+}
