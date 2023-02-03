@@ -286,3 +286,37 @@ footer {
     font-size: 40px;
     padding: 0px 30px 0px 30px;
 }
+
+/* ----------------------------------------------------------Media Querie---------------------------------------------------------- */
+
+@media (max-width: 1024px){
+    .first-head{ display: block;
+                text-align: center; }
+    .left{ justify-content: center;}
+    .left-b h1{ font-size: 20px; }
+    .left .h-m{ font-size: 60px;
+                margin-top: -50px;
+                margin-right: 10px; }
+    .left-b button{ padding: 2px 4px 2px 4px;
+                    margin: 0; }
+    .right img{ margin: 0;
+                width: 250px; }
+
+    /* WHY ME? */
+    #second-head{ height: 45vh; }
+    .why-me h1{ font-size: 50px; }
+    .why-me-content{ display: grid;}
+    .why-me-left{ display: flex;
+        justify-content: space-around;
+         }
+    .why-me-left i{margin: 0 70px 0 70px;
+                    font-size: 20px;}
+    .why-me-center{ display: flex;
+    justify-content: space-around; }
+    .why-me-center h3{   margin: 0 65px 0 65px; padding-bottom: 15px;
+    text-align: center; }
+    .bold{ font-size: 15px; }
+    .why-me-right{ display: flex;  text-align: center; width: 35em;}
+    .why-me-right li{ 
+    font-size: 15px; padding: 0 50px 0 50px;}
+}
