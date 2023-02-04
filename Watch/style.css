@@ -25,21 +25,47 @@
     filter: invert(80%);
 }
 
+/* ---------------------------------------------------LIST----------------------------------------------------------- */
+
 .navbar ul{
-    display: flex;
+    font-size: 40px;
+    display: inline-flex;
     align-items: center;
 }
 
 .navbar ul li{
     color: whitesmoke;
     list-style: none;
-    padding: 0 5em;
+    margin-right: 50px;
+    padding: 0;
     font-weight: bold;
 }
 
-.navbar a{
+.navbar ul li:hover{
+    color: rgb(66,6,6);
+    transform: rotate(90em);
+}
+
+.navbar ul li a{
+    color: rgb(188,190,188);
     text-decoration: none;
 }
+
+.menu{
+    display: none;
+}
+
+.menu ul li{
+    font-size: 20px;
+    
+}
+
+.navbar ul li:hover .menu{
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
 
 header{
     display: flex;

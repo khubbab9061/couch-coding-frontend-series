@@ -294,12 +294,14 @@ footer {
                 text-align: center; }
     .left{ justify-content: center;}
     .left-b h1{ font-size: 20px; }
-    .left .h-m{ font-size: 60px;
-                margin-top: -50px;
+    .left .h-m{ margin-top: -10px;
                 margin-right: 10px; }
-    .left-b button{ padding: 2px 4px 2px 4px;
-                    margin: 0; }
-    .right img{ margin: 0;
+    .left .h-m .large{
+        font-size: 70px;
+    }
+    .left-b button{ padding: 2px 30px 2px 30px;
+                    margin: 0 0px 0 0; }
+    .right img{ margin: 50px 0 0 0;
                 width: 250px; }
 
     /* WHY ME? */
@@ -319,4 +321,7 @@ footer {
     .why-me-right{ display: flex;  text-align: center; width: 35em;}
     .why-me-right li{ 
     font-size: 15px; padding: 0 50px 0 50px;}
+
+    /* My Skills */
+    /* .skill-content{ width: calc(100px/3); } */
 }
