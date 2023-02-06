@@ -28,7 +28,7 @@ nav{
 }
 
 .port{
-    color: blue;
+    color: rgb(86, 86, 9);
 }
 
 .navbar{
@@ -37,12 +37,23 @@ nav{
 
 .navbar li{
     list-style: none;
-    padding-right: 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.work{
+    background-color: rgb(50, 145, 253);
+    border-radius: 5px;
 }
 
 .navbar a{
     color: white;
     text-decoration: none;
+}
+
+.navbar li:hover{
+    background-color: rgb(50, 145, 253);
 }
 
 #first-section{
@@ -54,7 +65,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 header .left-head figure{
@@ -63,14 +74,15 @@ header .left-head figure{
 }
 
 header .left-head img{
-    width: 200px;
+    width: 250px;
+    margin-left: -60px;
     padding: 20px;
     border-radius: 20px 0px 20px 0px;
     border: 3px solid black;
 }
 
 header .right-head{
-    padding-right: 200px;
+    padding-right: 100px;
 }
 
 header .right-head h1{
@@ -93,4 +105,18 @@ header .right-head h1{
 header .right-head h3{
     font-weight: lighter;
     font-size: 40px;
+}
+
+header .right-head button{
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(50, 145, 253);
+    border-radius: 5px;
+    margin-left: 28em;
+}
+
+header .right-head button:hover{
+    background-color: black;
+    color: rgb(50, 145, 253);
+    cursor: pointer;
 }
