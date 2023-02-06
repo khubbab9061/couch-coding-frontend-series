@@ -19,8 +19,7 @@ nav{
 }
 
 .logo i{
-
-    filter: invert(1);
+    color: whitesmoke;
 }
 
 .nav-heading{
@@ -28,11 +27,12 @@ nav{
 }
 
 .port{
-    color: rgb(86, 86, 9);
+    color: rgb(50, 145, 253);
 }
 
 .navbar{
     display: flex;
+    
 }
 
 .navbar li{
@@ -45,6 +45,7 @@ nav{
 .work{
     background-color: rgb(50, 145, 253);
     border-radius: 5px;
+    margin: 0;
 }
 
 .navbar a{
@@ -54,6 +55,7 @@ nav{
 
 .navbar li:hover{
     background-color: rgb(50, 145, 253);
+    transition: .5s;
 }
 
 #first-section{
@@ -68,7 +70,18 @@ header{
     padding-top: 80px;
 }
 
+
+.image img{
+    position: relative;
+    /* overflow: visible; */
+    margin-left: 370px;
+    margin-top: -15px;
+    border: none;
+    border-radius: 20px 0px 20px 0px;
+}
+
 header .left-head figure{
+
     padding-left: 150px;
     border-radius: 20px 0px 20px 0px;
 }
@@ -110,7 +123,7 @@ header .right-head h3{
 header .right-head button{
     margin-top: 10px;
     padding: 5px 10px 5px 10px;
-    background-color: rgb(50, 145, 253);
+    background-color: transparent;
     border-radius: 5px;
     margin-left: 28em;
 }

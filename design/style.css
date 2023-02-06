@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    /* padding: 200px; */
+    height: 50vh;
+    width: 50vh;
+    position: relative;
+    background: gray;
+    border-radius: 200px;
+    /* overflow:hidden; */
+}
+.box::before{
+    content: '';
+    position: relative;
+    inset: 140px 700px;
+    background-image: linear-gradient(orange,yellow);
+    animation: circle 3s infinite linear;
+}
+
+@keyframes circle {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+
+}
