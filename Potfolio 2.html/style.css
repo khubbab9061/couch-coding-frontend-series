@@ -1,28 +1,34 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#first-section{
-    height: 100vh;
-    background-color: rgb(50, 145, 253);
-}
 
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    height: 50px;
+    height: 80px;
 }
 
 .logo {
     display: flex;
+    font-size: 30px;
 }
 
 .logo i{
 
     filter: invert(1);
+}
+
+.nav-heading{
+    padding-left: 10px;
+}
+
+.port{
+    color: blue;
 }
 
 .navbar{
@@ -31,10 +37,60 @@ nav{
 
 .navbar li{
     list-style: none;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .navbar a{
     color: white;
     text-decoration: none;
+}
+
+#first-section{
+    height: 89.3vh;
+    background-color: rgb(50, 145, 253);
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 120px;
+}
+
+header .left-head figure{
+    padding-left: 150px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+header .left-head img{
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px 0px 20px 0px;
+    border: 3px solid black;
+}
+
+header .right-head{
+    padding-right: 200px;
+}
+
+header .right-head h1{
+    font-size: 50px;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: color 1.5s infinite;
+}
+
+@keyframes color{
+    
+    0%{color: whitesmoke;}
+    75%{color: rgb(50, 145, 253);}
+    100%{color: white; transition: all 200ms;}
+}
+
+header .right-head h3{
+    font-weight: lighter;
+    font-size: 40px;
 }
