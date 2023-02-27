@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.one{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient( to top left, rgba(0, 0, 0, 0.653), rgba(255, 0, 0, 0.785)),url(./image2.png);
+    background-image: linear-gradient(u);
+    height: 100vh;
+    width: 25vh;
+}
+
+.logo h1{
+    font-size: 15px;
+    color: black;
+}
+
+.l-h1{
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+nav i{
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.nav-list li{
+    margin: 20px;
+    list-style: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.one header{
+    background-color: rgba(0, 0, 0, 0.879);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180vh;
+}
