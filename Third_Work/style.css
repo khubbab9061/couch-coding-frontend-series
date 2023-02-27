@@ -55,3 +55,24 @@ nav i{
     align-items: center;
     width: 180vh;
 }
+
+.one header h1{
+    color: rgba(255, 0, 0, 0.745);
+    font-size: 50px;
+    animation: color 2s infinite;
+}
+
+@keyframes color{
+    0%{color: red;}
+    30%{color: gray;}
+    /* 100%{color: red;} */
+}
+
+.h-h1{
+    font-size: 65px;
+}
+
+.one header button{
+    background-color: transparent;
+    padding: 10px 25px 10px 25px;
+}
