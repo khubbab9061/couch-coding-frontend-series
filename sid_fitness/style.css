@@ -1,0 +1,9 @@
+.navbar-brand{
+    background-color: black;
+    color: red;
+}
+
+.navbar-collapse{
+    position: relative;
+    right: 0px;
+}
