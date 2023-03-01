@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./myjava.js"></script>
+    <script src="https://kit.fontawesome.com/5f4479b748.js" crossorigin="anonymous"></script>
+    <title>MuscleTech</title>
+</head>
+<body>
+    <section id="first-section">
+        <div class="circle"></div>
+        <header class="first-sec-head">
+            <img src="./images/logo.png" alt="">
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="left--side">
+                <h1>It's <span class="m-t">MuscleTech</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum minima facere aliquam inventore corporis
+                temporibus itaque amet repellendus,
+                dignissimos impedit ex nulla, alias repellat tempore aperiam laudantium consequatur voluptatibus.</p>
+                <a href="#"><button>Explore More</button></a>
+            </div>
+            <div class="right--side">
+                <img src="./images/nitro_tech.png" class="nitro">
+            </div>
+        </div>
+        <ul class="picture">
+            <li><img src="./images/cell_tech.png" class="pic--one" onclick="imgSlider('nitro_tech1');changeCircleColor('#52378A')"></li>
+            <li><img src="./images/logo.png" class="pic--two" onclick="imgSlider('nitro_tech2');changeCircleColor('#52378B')"></li>
+            <li><img src="./images/ISO.png" class="pic--three" onclick="imgSlider('nitro_tech3');changeCircleColor('#52378C')"></li>
+        </ul>
+        <ul class="social--media">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </section>
+
+    <!-- <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.nitro_techs').scr = anything;
+        }
+    </script> -->
+</body>
+</html>
