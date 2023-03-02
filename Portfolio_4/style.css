@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: "Days One", sans-serif; */
+}
+
+#main{
+    position: relative;
+    height: 87vh;
+    padding: 50px;
+    /* background: linear-gradient(#439cfb5a,#ae87fb63),url(images/backgroud.jfif); */
+    background-size: cover;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+}
+
+nav h1{
+    padding-left: 30px;
+    font-size: 50px;
+    color:#004b9b;
+}
+
+nav span{
+    color: whitesmoke;
+}
+
+nav ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+nav ul li a:hover{
+    color: #004b9b;
+    transition: .2s;
+}
+
+.sq-1{
+    position: absolute;
+    top: 40.5%;
+    left: 0;
+    width: 50%;
+    height: 60%;
+    background: #0177f6ab;
+    clip-path: polygon(0 43%, 0 100%, 100% 100%);
+}
+
+.sq-2{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    width: 70%;
+    height: 70%;
+    background: #0177f6ab;
+    clip-path: polygon(100% 0, 0 0, 100% 57%);
+}
+
+.sq-3{
+    position: absolute;
+    top: 50.5%;
+    right: 60%;
+    width: 40%;
+    height: 50%;
+    background: #004b9b;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.sq-4{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    height: 60%;
+    background: #0168d6;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 5% 30px 0 30px; */
+    padding-top: 5%;
+}
+
+.left--side{
+    width: 50%;
+}
+
+.left--side h3{
+    font-size: 30px;
+}
+
+.left--side h1{
+    font-size: 40px;
+    color: #004b9b;
+}
+
+.right--side img{
+    width: 250px;
+}
+
+#main-2{
+    height: 100vh;
+    background-color: black;
+}
+
+#main-3{
+    height: 100vh;
+    background-color:#52378A;
+}
