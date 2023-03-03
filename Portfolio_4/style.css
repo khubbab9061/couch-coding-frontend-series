@@ -6,9 +6,9 @@
 
 #main{
     position: relative;
-    height: 87vh;
+    height: 87.5vh;
     padding: 50px;
-    /* background: linear-gradient(#439cfb5a,#ae87fb63),url(images/backgroud.jfif); */
+    background: linear-gradient(#439cfb5a,#ae87fb);
     background-size: cover;
 }
 
@@ -54,7 +54,7 @@ nav ul li a:hover{
 
 .sq-1{
     position: absolute;
-    top: 40.5%;
+    top: 40%;
     left: 0;
     width: 50%;
     height: 60%;
@@ -76,7 +76,7 @@ nav ul li a:hover{
 
 .sq-3{
     position: absolute;
-    top: 50.5%;
+    top: 50%;
     right: 60%;
     width: 40%;
     height: 50%;
@@ -101,11 +101,11 @@ header{
     justify-content: space-around;
     align-items: center;
     /* padding: 5% 30px 0 30px; */
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .left--side{
-    width: 50%;
+    width: 40%;
 }
 
 .left--side h3{
@@ -113,12 +113,75 @@ header{
 }
 
 .left--side h1{
+    padding-bottom: 5%;
     font-size: 40px;
     color: #004b9b;
 }
 
-.right--side img{
-    width: 250px;
+.left--side p{
+    padding-bottom: 3%;
+}
+
+.left--side button{
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #52378A;
+    border: 2px #52378A solid;
+}
+
+.left--side button a{
+    text-decoration: none;
+}
+
+.left--side button:hover{
+    background: #52378A;
+    color: whitesmoke;
+}
+
+.right--side{
+    position: relative;
+    width: 350px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    overflow: hidden;
+}
+
+.right--side::before{
+    content: '';
+    position: absolute;
+    background: linear-gradient(to top left, #f6ff00,#ff0000);
+    width: 150px;
+    height:155%;
+    animation: rotate 4s linear infinite;
+}
+
+.right--side::before:hover{
+    background: linear-gradient(to top left, #f6ff00,#00ff3c);
+    animation: none;
+    position: relative;
+    width: 500px;
+    height: 500%;
+}
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.right--side::after{
+    content: '';
+    position: absolute;
+    background-size:100%;
+    inset: 5px;
+    background-image: url(images/me.jpeg);
+}
+
+.right--side h1{
+    position: relative;
 }
 
 #main-2{
