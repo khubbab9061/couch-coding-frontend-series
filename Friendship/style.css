@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    /* background: linear-gradient(#3e3b92,#f44369); */
+    background: palevioletred;
+    padding: 30px;
+    height: 92.4vh;
+}
+
+.design-1{
+    position: absolute;
+    box-shadow: 1px 1px 200px;
+    left: 37%;
+    bottom: 75%;
+    width: 25.5%;
+    height: 50%;
+    background: #2e435a;
+    clip-path: circle(50% at 50% 50%);
+}
+
+/* .design-2{
+    position: absolute;
+    left: -5%;
+    bottom: 60%;
+    width: 25.5%;
+    height: 50%;
+    background: #2e435a;
+    clip-path: circle(50% at 50% 50%);
+} */
+
+/* .design-3{
+    position: absolute;
+    left: 74.5%;
+    bottom: 60%;
+    width: 25.5%;
+    height: 50%;
+    background: #2e435a;
+    clip-path: circle(50.2% at 67% 35%);
+} */
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+nav .line{
+    /* background: black; */
+    border: 1px black solid;
+    margin: 0 20px;
+}
+
+nav i{
+    padding-top: 10px;
+    font-size: 50px;
+}
+
+nav h1{
+    font-size: 60px;
+}
+
+nav .nav--heading{
+    padding-top: 10px;
+}
