@@ -74,5 +74,9 @@ nav i{
 
 .one header button{
     background-color: transparent;
-    padding: 10px 25px 10px 25px;
+}
+
+.one header a{
+    /* margin: 20px 25px 20px 25px; */
+    padding: 25px;
 }
