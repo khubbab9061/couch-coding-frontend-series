@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#first--head{
+    position: relative;
+    height: 100vh;
+    z-index: 0;
+    background: linear-gradient(to right, red,blue);
+}
+
+#first--head nav{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo{
+    padding: 150px 0;
+    font-size: 50px;
+}
+
+nav .options{
+    display: flex;
+}
+
+.op--1{
+    margin: 0 20px;
+}
+
+.op--2{
+    margin: 0 20px;
+}
+
+.op--3{
+    margin: 0 20px;
+}
+
+.op--4{
+    margin: 0 20px;
+}
+
+nav .down--btn{
+    margin-top: 10%;
+}
+
+/* for icon */
+
+nav .down--btn i{
+    color: whitesmoke;
+    border: 5px solid whitesmoke;
+    font-size: 50px;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+/* for text */
+
+nav .down--btn a{
+    text-decoration: none;
+    color: whitesmoke;
+    border: 5px solid whitesmoke;
+    font-size: 30px;
+    border: none;
+    padding: 30px;
+}
+
+nav .down--btn a:hover{
+    transition: .4s;
+    color: red;
+    /* border: 5px solid blue; */
+}
+
+.shape{
+    position: absolute;
+    width: 100%;
+    height: 148%;
+    z-index: -1;
+    top: -48%;
+    /* left: 5%; */
+    clip-path: polygon(0% 0%, 100% 0, 100% 82%, 50% 100%, 0 82%);
+    background-color: black;
+    animation: float 1s linear alternate;
+}
+
+@keyframes float{
+    0% {
+        transform:scaleY(40%)
+    }
+    100% {
+        transform:scaleX(100%);
+    }
+}
+
+#second--head{
+    height: 100vh;
+}
