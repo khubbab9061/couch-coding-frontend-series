@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Sum(){
+            var num_1=Number(document.getElementById('t1').value);
+            var num_2=Number(document.getElementById('t2').value);
+            document.getElementById('answer').innerHTML=num_1 + " + " + num_2 + " = " + (num_1+num_2);
+        }
+
+        function Sub(){
+            var num_1=Number(document.getElementById('t1').value);
+            var num_2=Number(document.getElementById('t2').value);
+            document.getElementById('answer').innerHTML=num_1 + " - " + num_2 + " = " + (num_1-num_2);
+        }
+        function Mul(){
+            var num_1=Number(document.getElementById('t1').value);
+            var num_2=Number(document.getElementById('t2').value);
+            document.getElementById('answer').innerHTML=num_1 + " * " + num_2 + " = " + (num_1*num_2);
+        }function Div(){
+            var num_1=Number(document.getElementById('t1').value);
+            var num_2=Number(document.getElementById('t2').value);
+            document.getElementById('answer').innerHTML=num_1 + " / " + num_2 + " = " + (num_1/num_2);
+        }
+    </script>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td><input type="text" placeholder="Enter number 1" id="t1"></td>
+            <td><input type="text" placeholder="Enter number 1" id="t2"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Sum" onclick="Sum()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Sub" onclick="Sub()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Mul" onclick="Mul()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Div" onclick="Div()"></td>
+        </tr>
+        <tr>
+            <td><p id="answer"> </p></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.parent{
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal{
+    height: 100vh;
+    width: 100%;
+    background: #aaaaaa;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal input{
+    padding: 15px 32px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+#btn_row{
+    margin: 2px 0;
+    border-radius: 50px;
+}
+
+#btn_row button{
+    background-color: #efefef;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.row-2 button{
+    padding: 0 50px;
+}
+
+#zero{
+    padding: 20px 50px;
+}

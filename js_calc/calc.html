@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function Sum(){
+            var num_1=Number(document.getElementById('b1').value);
+            var num_2=Number(document.getElementById('b2').value);
+            document.getElementById('ans').innerHTML=num_1 + " + " + num_2 + " = " + (num_1+num_2);
+        }
+        function Sub(){
+            var num_1=Number(document.getElementById('b1').value);
+            var num_2=Number(document.getElementById('b2').value);
+            document.getElementById('ans').innerHTML=num_1 + " - " + num_2 + " = " + (num_1-num_2);
+        }function Mul(){
+            var num_1=Number(document.getElementById('b1').value);
+            var num_2=Number(document.getElementById('b2').value);
+            document.getElementById('ans').innerHTML=num_1 + " * " + num_2 + " = " + (num_1*num_2);
+        }function Div(){
+            var num_1=Number(document.getElementById('b1').value);
+            var num_2=Number(document.getElementById('b2').value);
+            document.getElementById('ans').innerHTML=num_1 + " / " + num_2 + " = " + (num_1/num_2);
+        }
+    </script>
+    <style>
+        *{margin: 0; padding: 0;}
+
+        section{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 50px;
+        }
+
+        .calc{
+            border: 1px solid black;
+            padding: 10px;
+            background: #000;
+        }
+
+        .inputs{
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .inputs input{
+            font-size: 20px;
+            padding: 5px 10px;
+            text-align: center;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .inputs .block1{
+            padding-right: 5px;
+        }
+
+        .opts{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .opts button{
+            border: 1px dashed white;
+            background-color: #000;
+            color: white;
+            padding: 5px 0;
+            font-size: 20px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .opts button:hover{
+            background-color: white;
+            color: #000;
+            border: 1px solid white;
+        }
+
+        .output{
+            margin-top: 15px;
+            border: 1px solid;
+            border-radius: 5px;
+            background: white;
+            height: 35px;
+            text-align: center;
+        }
+
+        .output p{
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>CALCULATOR</h1>
+        <div class="calc">
+            <div class="inputs">
+                <div class="block1">
+                    <input type="text" placeholder="Enter Number" id="b1">
+                </div>
+                <div class="block2">
+                    <input type="text" placeholder="Enter Number" id="b2">
+                </div>
+            </div>
+            <div class="opts">
+                    <button onclick="Sum()">Sum</button>
+                
+                
+                    <button onclick="Sub()">Subtract</button>
+                
+                
+                    <button onclick="Mul()">Multiply</button>
+                
+                
+                    <button onclick="Div()">Divide</button>
+                
+            </div>
+            <div class="output">
+                <p id="ans" ></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
