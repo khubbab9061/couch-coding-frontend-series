@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .card {
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card img{
+            border-radius: 5px;
+        }
+
+        .card-text {
+            transition: 0.3s;
+            width: 230px;
+            height: 150px;
+            color: black;
+            position: absolute;
+            z-index: 10;
+            bottom: -100%;
+            background-color: rgba(255, 255, 255, 0.788);
+            padding: 20px;
+        }
+        .card-text h1{
+            font-size: 25px;
+        }
+
+        .card:hover .card-text {
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

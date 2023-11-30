@@ -1,0 +1,186 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#port {
+    display: flex;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 10%;
+    background: green;
+    box-shadow: 2px 2px 20px black;
+}
+
+nav .logo {
+    font-size: 40px;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+nav .menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 30px;
+}
+
+aside {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 10%;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+#home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.home-left {
+    width: 40%;
+}
+
+.home-left h1 {
+    font-size: 40px;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-image {
+    background-image: url(assets/me.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 500px;
+    box-shadow: 2px 2px 20px black;
+    animation: blob 5s infinite ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+@keyframes blob {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    25% {
+        border-radius: 30% 60% 70% 40%/50% 70% 50% 60%;
+    }
+
+    50% {
+        border-radius: 40% 70% 60% 30%/70% 50% 80% 50%;
+    }
+
+    75% {
+        border-radius: 70% 50% 40% 60%/30% 70% 50% 80%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+#about {
+    background: green;
+    height: 100vh;
+    width: 100%;
+}
+
+#services {
+    background: yellow;
+    height: 100vh;
+    width: 100%;
+}
+
+#contact {
+    background: gray;
+    height: 100vh;
+    width: 100%;
+}
+
+#feedback {
+    background: black;
+    height: 100vh;
+    width: 100%;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: fixed;
+    top: 45%;
+    left: 98%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+    background-color: black;
+    opacity: .7;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+.slider-nav a.active {
+    background-color: red;
+}

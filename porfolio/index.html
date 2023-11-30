@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <section id="port">
+        <nav>
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#about"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#services"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#contact"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#feedback"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <aside>
+            <div class="slider">
+                <section id="home">
+                    <div class="home-left">
+                        <h1>I<span>'</span>m Khubbab Siddiqui</h1>
+                        <h1> I am Designer</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing.</p>
+                    </div>
+                    <div class="home-right">
+                        <div class="home-image"></div>
+                    </div>
+
+                </section>
+                <section id="about"></section>
+                <section id="services"></section>
+                <section id="contact"></section>
+                <section id="feedback"></section>
+            </div>
+            <div class="slider-nav">
+                <a id="icon1" onclick="click1()" href="#home"></a>
+                <a id="icon2" onclick="click2()" href="#about"></a>
+                <a id="icon3" onclick="click3()" href="#services"></a>
+                <a id="icon4" onclick="click4()" href="#contact"></a>
+                <a id="icon5" onclick="click5()" href="#feedback"></a>
+            </div>
+        </aside>
+    </section>
+</body>
+
+</html>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    var button1 = document.getElementById("icon1")
+    var button2 = document.getElementById("icon2")
+    var button3 = document.getElementById("icon3")
+    var button4 = document.getElementById("icon4")
+    var button5 = document.getElementById("icon5")
+
+    button1.classList.add("active")
+    function click1() {
+        button1.classList.add("active")
+        button2.classList.remove("active")
+        button3.classList.remove("active")
+        button4.classList.remove("active")
+        button5.classList.remove("active")
+    }
+    function click2() {
+        button1.classList.remove("active")
+        button2.classList.add("active")
+        button3.classList.remove("active")
+        button4.classList.remove("active")
+        button5.classList.remove("active")
+    }
+    function click3() {
+        button1.classList.remove("active")
+        button2.classList.remove("active")
+        button3.classList.add("active")
+        button4.classList.remove("active")
+        button5.classList.remove("active")
+    }
+    function click4() {
+        button1.classList.remove("active")
+        button2.classList.remove("active")
+        button3.classList.remove("active")
+        button4.classList.add("active")
+        button5.classList.remove("active")
+    }
+    function click5() {
+        button1.classList.remove("active")
+        button2.classList.remove("active")
+        button3.classList.remove("active")
+        button4.classList.remove("active")
+        button5.classList.add("active")
+    }
+
+</script>

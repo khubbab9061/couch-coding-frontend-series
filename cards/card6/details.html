@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        table td{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="details">
+        <table border="0" align="center" cellspacing="20">
+            <tr>
+                <td><img src="" alt="" id="img1" height="250px" width="350px"></td>
+                <td><img src="" alt="" id="img2" height="250px" width="350px"></td>
+                <td><img src="" alt="" id="img3" height="250px" width="350px"></td>
+            </tr>
+            <tr>
+                <td><img src="" alt="" id="img4" height="250px" width="350px"></td>
+                <td><img src="" alt="" id="img5" height="250px" width="350px"></td>
+                <td><img src="" alt="" id="img6" height="250px" width="350px"></td>
+            </tr>
+            <tr>
+                <td><img src="" alt="" id="img7" height="250px" width="350px"></td>
+                <td><img src="" alt="" id="img8" height="250px" width="350px"></td>
+                <td><img src="" alt="" id="img9" height="250px" width="350px"></td>
+            </tr>
+            <tr>
+                <td><img src="" alt="" id="img10" height="250px" width="350px"></td>
+                <td><img src="" alt="" id="img11" height="250px" width="350px"></td>
+                <td><img src="" alt="" id="img12" height="250px" width="350px"></td>
+            </tr>
+            <tr>
+                <td><img src="" alt="" id="img13" height="250px" width="350px"></td>
+                <td><img src="" alt="" id="img14" height="250px" width="350px"></td>
+                <td><img src="" alt="" id="img15" height="300px" width="400px"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    var url = new URL (window.location.href);
+    var id = url.searchParams.get("id")
+
+    document.querySelector("#img1").src = cards[id].img
+    document.querySelector("#img2").src = cards[id].img
+    document.querySelector("#img3").src = cards[id].img
+</script>
+</html>
