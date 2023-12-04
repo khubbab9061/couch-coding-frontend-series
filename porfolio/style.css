@@ -9,12 +9,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+
+
+ 
 #port {
     display: flex;
     width: 100%;
 }
 
 nav {
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,11 +28,12 @@ nav {
     position: fixed;
     height: 100vh;
     width: 10%;
-    background: green;
+    background: #191919;
     box-shadow: 2px 2px 20px black;
 }
 
 .navbar-content{
+    color: #E3651D;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -37,6 +44,28 @@ nav {
 
 .navbar-content .logo {
     font-size: 30px;
+}
+nav{
+    & .navbar-content{
+        & .nav-btns{
+            height: 250px;
+            & ul{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                gap: 30px;
+                list-style-type: none;
+                & li{
+                    & a{
+                        font-weight: bolder;
+                        text-decoration: none;
+                        color: #E3651D;   
+                    }
+                }
+            }
+        }
+    }
 }
 
 nav .menu ul {
@@ -50,7 +79,7 @@ nav ul li {
 }
 
 nav .menu ul li a {
-    color: black;
+    color: #E3651D;
     font-size: 20px;
 }
 
@@ -78,16 +107,39 @@ aside {
     justify-content: space-around;
     align-items: center;
     position: relative;
+    background-color: #191919;
 }
 
 .home-left {
-    width: 40%;
+    width: 35%;
+    color: #E3651D;
 }
 
 .home-left h1 {
     font-size: 40px;
 }
+.home-left h3{
+    font-size: 30px;
+    /* text-align: center; */
+    /* margin: 10px 0 20px 10px; */
+}
 
+.home-left p{
+    color: #eb7f41;
+    margin: 20px 0 20px 0;
+}
+.home-left button{
+    background: transparent;
+    padding: 10px;
+    border: 1px solid #E3651D;
+    border-radius: 5px;
+    & a{
+        font-weight: bold;
+        font-size: 30px;
+    color: #E3651D;
+        text-decoration: none;
+    }
+}
 .home-right {
     display: flex;
     justify-content: center;
@@ -129,11 +181,41 @@ aside {
 }
 
 #about {
-    background: green;
+    background: #E3651D;
     height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.about-container{
+    width: 90%;
+    height: 90vh;
+}
+.about-1 {
+    & h1{
+    font-size: 50px;
+    color: #191919;
+    }
+    & hr{
+        border: 1px solid #191919;
+    }
+}
+.about-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-con-left{
+    width: 45%;
+    height: 90vh;
+    background-color: red;
+}
+.about-con-right{
+    width: 45%;
+    height: 90vh;
+    background-color: yellow;
+}
 #services {
     background: yellow;
     height: 100vh;
