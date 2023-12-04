@@ -13,7 +13,7 @@
 
 
 
- 
+
 #port {
     display: flex;
     width: 100%;
@@ -32,7 +32,7 @@ nav {
     box-shadow: 2px 2px 20px black;
 }
 
-.navbar-content{
+.navbar-content {
     color: #E3651D;
     display: flex;
     flex-direction: column;
@@ -45,22 +45,25 @@ nav {
 .navbar-content .logo {
     font-size: 30px;
 }
-nav{
-    & .navbar-content{
-        & .nav-btns{
+
+nav {
+    & .navbar-content {
+        & .nav-btns {
             height: 250px;
-            & ul{
+
+            & ul {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
 
                 gap: 30px;
                 list-style-type: none;
-                & li{
-                    & a{
+
+                & li {
+                    & a {
                         font-weight: bolder;
                         text-decoration: none;
-                        color: #E3651D;   
+                        color: #E3651D;
                     }
                 }
             }
@@ -118,28 +121,32 @@ aside {
 .home-left h1 {
     font-size: 40px;
 }
-.home-left h3{
+
+.home-left h3 {
     font-size: 30px;
     /* text-align: center; */
     /* margin: 10px 0 20px 10px; */
 }
 
-.home-left p{
+.home-left p {
     color: #eb7f41;
     margin: 20px 0 20px 0;
 }
-.home-left button{
+
+.home-left button {
     background: transparent;
     padding: 10px;
     border: 1px solid #E3651D;
     border-radius: 5px;
-    & a{
+
+    & a {
         font-weight: bold;
         font-size: 30px;
-    color: #E3651D;
+        color: #E3651D;
         text-decoration: none;
     }
 }
+
 .home-right {
     display: flex;
     justify-content: center;
@@ -153,7 +160,7 @@ aside {
     background-position: center;
     height: 500px;
     width: 500px;
-    box-shadow: 2px 2px 20px black;
+    box-shadow: 2px 2px 20px #E3651D;
     animation: blob 5s infinite ease-in-out;
     transition: 1s ease-in-out;
 }
@@ -188,34 +195,89 @@ aside {
     justify-content: center;
     align-items: center;
 }
-.about-container{
+
+.about-container {
     width: 90%;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    /* gap: 100px; */
+    justify-content: center;
+    /* align-items: center; */
 }
+
 .about-1 {
-    & h1{
-    font-size: 50px;
-    color: #191919;
+
+    /* background: red; */
+    & h1 {
+        font-size: 50px;
+        color: #191919;
     }
-    & hr{
+
+    & hr {
         border: 1px solid #191919;
     }
 }
-.about-2{
+
+.about-2 {
+    /* background: yellow; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 20px;
+    height: 80vh;
 }
-.about-con-left{
+
+.about-con-left {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 45%;
-    height: 90vh;
-    background-color: red;
 }
-.about-con-right{
-    width: 45%;
-    height: 90vh;
-    background-color: yellow;
+
+.about-con-left p {
+    margin-left: 20px;
 }
+
+.pd-details h3 {
+    font-size: 30px;
+}
+
+.pd-text {
+    margin: 20px 0 0 20px;
+
+    & ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.about-con-right {
+    margin-right: 50px;
+
+    & .pe-content {
+        & h3 {
+            font-size: 30px;
+        }
+
+        & .pe-text {
+            margin: 20px 0 20px 20px;
+            & > ul{
+                & > li{
+                  font-weight: bold;  
+                }
+                & ul{
+                    margin-bottom: 20px;
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
 #services {
     background: yellow;
     height: 100vh;
@@ -264,6 +326,7 @@ aside {
 .slider-nav a:hover {
     opacity: 1;
 }
+
 .slider-nav a.active {
     background-color: red;
 }
